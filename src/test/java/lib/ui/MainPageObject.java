@@ -205,7 +205,7 @@ public class MainPageObject {
         } else if (by_type.equals("id")) {
             return By.id(locator);
         } else if (by_type.equals("css")) {
-            return By.cssSelector(locator); 
+            return By.cssSelector(locator);
         } else {
             throw new IllegalArgumentException("Cannot get type of locator. Locator: " + locator_with_type);
         }
