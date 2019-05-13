@@ -71,7 +71,7 @@ abstract public class MyListsPageObject extends MainPageObject {
                     10
             );
 
-            this.waitForElementNotPresent(remove_locator, "Remove button is still present!", 5);
+            driver.navigate().refresh();
         }
 
         if (Platform.getInstance().isIOS()) {
